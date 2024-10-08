@@ -1,0 +1,72 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.oper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.inp {
+  margin: 20px 0px;
+  display: flex;
+
+}
+
+.inp input {
+  padding: 15px 20px; /* Adjust padding for comfort */
+  font-size: 16px; /* Font size */
+  border: 2px solid #3498db; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.inp input:focus {
+  border-color: #2980b9; /* Darker border on focus */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on focus */
+}
+
+.inp input::placeholder {
+  color: #95a5a6; /* Placeholder color */
+  opacity: 1; /* Ensure opacity for placeholder */
+}
+
+.inp input:hover {
+  border-color: #2980b9; /* Change border color on hover */
+}
+
+
+.nums,.opers{
+  margin: 2px;
+
+}
+
+#op-Add{
+
+ padding: 80px 0px 50px 0px;
+}
+
+
+.calculator-heading {
+  font-size: 3rem; /* Adjust size as needed */
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6b6b, #f7b733); /* Change colors as desired */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center; /* Center the heading */
+  margin: 20px 0; /* Add some space around the heading */
+}
